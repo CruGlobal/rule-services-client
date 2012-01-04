@@ -1,0 +1,17 @@
+=========== Siebel ==================
+wsimport -s ../src CheckIn.wsdl
+
+If you get the message:
+    A class/interface with the same name "...." is already in use. Use a class customization to resolve this conflict.
+then go look through the WSDL for an element containing an unnamed complexType.  It is likely that there is either another
+similarly-named element with a different unnamed complex type, or there is an actual named complex type that shares
+the name with this element.  The importer defaults the name of the java class to that of the complex type.
+
+One work-around is to add a "name" attribute to the complex type in the WSDL.  Ensure that the "name" is unique and different
+from the name of the complex type.  Note that this will lead to a warning, but the whole thing still works.
+[WARNING] s4s-att-not-allowed: Attribute 'name' cannot appear in element 'complexType'.
+
+
+=========== Rule-Based Provisioning Services ==================
+wsimport -s ../src/main/java -p org.ccci.idm.rules.staffweb.client http://localhost:8080/rule-based-provisioning-services/staffweb?wsdl
+wsimport -s ../src/main/java -p org.ccci.idm.rules.siebel.client http://localhost:8080/rule-based-provisioning-services/siebel?wsdl
