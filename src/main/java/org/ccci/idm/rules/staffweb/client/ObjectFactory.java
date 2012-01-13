@@ -24,9 +24,9 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _ProvisionSiebelResponsibilityAccessForEmployee_QNAME = new QName("http://webservice.rules.idm.ccci.org/", "provisionSiebelResponsibilityAccessForEmployee");
-    private final static QName _ProvisionSiebelResponsibilityAccessForEmployeeResponse_QNAME = new QName("http://webservice.rules.idm.ccci.org/", "provisionSiebelResponsibilityAccessForEmployeeResponse");
     private final static QName _Exception_QNAME = new QName("http://webservice.rules.idm.ccci.org/", "Exception");
+    private final static QName _ProvisionStaffWebConsumerForEmployeeResponse_QNAME = new QName("http://webservice.rules.idm.ccci.org/", "provisionStaffWebConsumerForEmployeeResponse");
+    private final static QName _ProvisionStaffWebConsumerForEmployee_QNAME = new QName("http://webservice.rules.idm.ccci.org/", "provisionStaffWebConsumerForEmployee");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.ccci.idm.rules.staffweb.client
@@ -36,19 +36,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link ProvisionSiebelResponsibilityAccessForEmployee }
+     * Create an instance of {@link ProvisionStaffWebConsumerForEmployee }
      * 
      */
-    public ProvisionSiebelResponsibilityAccessForEmployee createProvisionSiebelResponsibilityAccessForEmployee() {
-        return new ProvisionSiebelResponsibilityAccessForEmployee();
+    public ProvisionStaffWebConsumerForEmployee createProvisionStaffWebConsumerForEmployee() {
+        return new ProvisionStaffWebConsumerForEmployee();
     }
 
     /**
-     * Create an instance of {@link ProvisionSiebelResponsibilityAccessForEmployeeResponse }
+     * Create an instance of {@link ProvisionStaffWebConsumerForEmployeeResponse }
      * 
      */
-    public ProvisionSiebelResponsibilityAccessForEmployeeResponse createProvisionSiebelResponsibilityAccessForEmployeeResponse() {
-        return new ProvisionSiebelResponsibilityAccessForEmployeeResponse();
+    public ProvisionStaffWebConsumerForEmployeeResponse createProvisionStaffWebConsumerForEmployeeResponse() {
+        return new ProvisionStaffWebConsumerForEmployeeResponse();
     }
 
     /**
@@ -60,30 +60,30 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ProvisionSiebelResponsibilityAccessForEmployee }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservice.rules.idm.ccci.org/", name = "provisionSiebelResponsibilityAccessForEmployee")
-    public JAXBElement<ProvisionSiebelResponsibilityAccessForEmployee> createProvisionSiebelResponsibilityAccessForEmployee(ProvisionSiebelResponsibilityAccessForEmployee value) {
-        return new JAXBElement<ProvisionSiebelResponsibilityAccessForEmployee>(_ProvisionSiebelResponsibilityAccessForEmployee_QNAME, ProvisionSiebelResponsibilityAccessForEmployee.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link ProvisionSiebelResponsibilityAccessForEmployeeResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://webservice.rules.idm.ccci.org/", name = "provisionSiebelResponsibilityAccessForEmployeeResponse")
-    public JAXBElement<ProvisionSiebelResponsibilityAccessForEmployeeResponse> createProvisionSiebelResponsibilityAccessForEmployeeResponse(ProvisionSiebelResponsibilityAccessForEmployeeResponse value) {
-        return new JAXBElement<ProvisionSiebelResponsibilityAccessForEmployeeResponse>(_ProvisionSiebelResponsibilityAccessForEmployeeResponse_QNAME, ProvisionSiebelResponsibilityAccessForEmployeeResponse.class, null, value);
-    }
-
-    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Exception }{@code >}}
      * 
      */
     @XmlElementDecl(namespace = "http://webservice.rules.idm.ccci.org/", name = "Exception")
     public JAXBElement<Exception> createException(Exception value) {
         return new JAXBElement<Exception>(_Exception_QNAME, Exception.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ProvisionStaffWebConsumerForEmployeeResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservice.rules.idm.ccci.org/", name = "provisionStaffWebConsumerForEmployeeResponse")
+    public JAXBElement<ProvisionStaffWebConsumerForEmployeeResponse> createProvisionStaffWebConsumerForEmployeeResponse(ProvisionStaffWebConsumerForEmployeeResponse value) {
+        return new JAXBElement<ProvisionStaffWebConsumerForEmployeeResponse>(_ProvisionStaffWebConsumerForEmployeeResponse_QNAME, ProvisionStaffWebConsumerForEmployeeResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link ProvisionStaffWebConsumerForEmployee }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://webservice.rules.idm.ccci.org/", name = "provisionStaffWebConsumerForEmployee")
+    public JAXBElement<ProvisionStaffWebConsumerForEmployee> createProvisionStaffWebConsumerForEmployee(ProvisionStaffWebConsumerForEmployee value) {
+        return new JAXBElement<ProvisionStaffWebConsumerForEmployee>(_ProvisionStaffWebConsumerForEmployee_QNAME, ProvisionStaffWebConsumerForEmployee.class, null, value);
     }
 
 }

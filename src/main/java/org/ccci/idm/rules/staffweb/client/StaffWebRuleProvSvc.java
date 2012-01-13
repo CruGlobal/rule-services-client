@@ -35,9 +35,9 @@ public interface StaffWebRuleProvSvc {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "provisionSiebelResponsibilityAccessForEmployee", targetNamespace = "http://webservice.rules.idm.ccci.org/", className = "org.ccci.idm.rules.staffweb.client.ProvisionSiebelResponsibilityAccessForEmployee")
-    @ResponseWrapper(localName = "provisionSiebelResponsibilityAccessForEmployeeResponse", targetNamespace = "http://webservice.rules.idm.ccci.org/", className = "org.ccci.idm.rules.staffweb.client.ProvisionSiebelResponsibilityAccessForEmployeeResponse")
-    public String provisionSiebelResponsibilityAccessForEmployee(
+    @RequestWrapper(localName = "provisionStaffWebConsumerForEmployee", targetNamespace = "http://webservice.rules.idm.ccci.org/", className = "org.ccci.idm.rules.staffweb.client.ProvisionStaffWebConsumerForEmployee")
+    @ResponseWrapper(localName = "provisionStaffWebConsumerForEmployeeResponse", targetNamespace = "http://webservice.rules.idm.ccci.org/", className = "org.ccci.idm.rules.staffweb.client.ProvisionStaffWebConsumerForEmployeeResponse")
+    public String provisionStaffWebConsumerForEmployee(
         @WebParam(name = "serverId", targetNamespace = "")
         String serverId,
         @WebParam(name = "serverSecret", targetNamespace = "")
