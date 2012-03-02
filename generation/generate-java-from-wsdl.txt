@@ -14,4 +14,6 @@ from the name of the complex type.  Note that this will lead to a warning, but t
 
 =========== Rule-Based Provisioning Services ==================
 wsimport -s ../src/main/java -p org.ccci.idm.rules.staffweb.client http://localhost:8080/rule-based-provisioning-services/staffweb?wsdl
-wsimport -s ../src/main/java -p org.ccci.idm.rules.siebel.client http://localhost:8080/rule-based-provisioning-services/siebel?wsdl
+wsimport -s ../src/main/java -p org.ccci.idm.rules.client http://localhost:8080/rule-based-provisioning-services/siebel?wsdl
+
+wsimport -s ../src/main/java -p org.ccci.idm.rules.client http://localhost:8080/rule-based-provisioning-services/rules?wsdl
